@@ -1,0 +1,16 @@
+package java_study_1122;
+
+public class 문제 {
+
+	public static void main(String[] args) {
+		
+		int number = 5;
+		// 팩토리얼 계산
+		int factorial = 1;
+		for (int i = 1; i <= number; i++) {
+			factorial = factorial * i;
+			System.out.println(factorial);
+		}
+	}
+
+}
