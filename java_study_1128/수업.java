@@ -37,6 +37,10 @@ public class 수업 {
 	    String code = "abcdOO";
 	    System.out.println(code.toUpperCase());//소문자에서 대문자로 강제변환
 	    
+	    //**trim :공백 제거
+	    String word2 = "안녕하세요? ";
+	    System.out.println(word2.trim());//앞뒤 공백 제거
+	    
 	    //** contains : 특정 문자열이 포함되어 있는지 여부확인
 	    String word4 = "hyunsangwon93@gmail.com";
 	    System.out.println(word4.contains("@")); //있으면 true 없으면 false
