@@ -41,6 +41,9 @@ public class 수업 {
 	    String word2 = "안녕하세요? ";
 	    System.out.println(word2.trim());//앞뒤 공백 제거
 	    
+	    //*** split : 문자 분할(실무에서 데이터분석 혹은 코딩테스트 단골 손님!)
+	    
+	    
 	    //** contains : 특정 문자열이 포함되어 있는지 여부확인
 	    String word4 = "hyunsangwon93@gmail.com";
 	    System.out.println(word4.contains("@")); //있으면 true 없으면 false
