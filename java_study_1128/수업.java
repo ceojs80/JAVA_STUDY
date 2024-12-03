@@ -42,7 +42,10 @@ public class 수업 {
 	    System.out.println(word2.trim());//앞뒤 공백 제거
 	    
 	    //*** split : 문자 분할(실무에서 데이터분석 혹은 코딩테스트 단골 손님!)
-	    
+	    String word3= "한화이글스,두산베어스,롯데자이언츠";
+	    String[] result = word3.split(",");//해당 분자를 콤마로 나눈다.
+	    System.out.println(result[0]);
+	    System.out.println(result[2]);
 	    
 	    //** contains : 특정 문자열이 포함되어 있는지 여부확인
 	    String word4 = "hyunsangwon93@gmail.com";
