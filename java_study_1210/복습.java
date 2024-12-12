@@ -40,11 +40,25 @@ public class 복습 {
 	     * }
 	     * 
 	     * if-else문 : 조건이 참일 때와 거짓일 때 각각 다른 코드를 실행
+	     * if(조건식){
+	     * 
+	     * }else{
+	     * //조건이 거짓(flase)일때 실행할 코드
+	     * }
 	     * 
 	     * else-if문 : 여러 개의 조건을 평가
-	     * if(조건식){
+	     * if(조건식1){
 	     *   //조건식1이 참일 때 실행
-	     * }else if(
+	     * }else if(조건식2){
+	     *  //조건식1이 참일때 실행
+	     * }else if(조건식2){
+	     *  //조건식2이 참일때 실행
+	     * }else if(조건식3){
+	     *  //조건식3이 참일때 실행
+	     * }else if{
+	     *  //모든조건이 거짓일 때 실행할 코드
+	     * }
+	     */
 	     
 	     //무엇이 출력되고 그 이유는 무엇인지 작성하기
 	     //=> 답) 출력 A,
@@ -60,8 +74,13 @@ public class 복습 {
 	     String repassword = "456"; //비밀번호 재입력
 	     // '==' : 비교연산자
 	     //자바에서는 문자를 비교할땐 비교연산자가 아니라 equals(동등한)를 사용합니다.
-	     if(password.equals(rePassword)) { //문자열 함수로 문자를 비교한다.
+	     if(password.equals(repassword)) { //문자열 함수로 문자를 비교한다.
 	        System.out.println("비밀번호가 일치합니다."); 
+	     }
+	     // 아래에 비밀번호가 일치하지 않다를 if로 나타내보시오.
+	     // '!=': 일치 x 연산자
+	     if(!password.equals(repassword)) {
+	    	 System.out.println("비밀번호가 일치하지 않습니다.");
 	     }
 	     
 	     if(10 !=5) {//10하고 5가 다르다면?
@@ -132,6 +151,20 @@ public class 복습 {
 	     }
 	    	 System.out.println("최종 값:"+ scoreCount);
 	    	 
+	     //같이풀기 2. 배열에서 최댓값 찾기
+	     int []numbers = {12,45,7,23,56,89,34}; //89가 최댓값!
+	     int max = 0; //최댓값 담을 변수
+	     
+	     for(int i=0; i<numbers.length;i++) {//배열길이만큼 반복문
+	    	 int temp = numbers[i]; //요소를 temp변수에 대입
+	    	 if(temp > max) { //max변수보다 크다면?
+	    		 max = temp;
+	    	 }
+	    	 
+	     }
+	     System.out.println("가장 큰 값은:" + max + "입니다.");
+	     
+	     
 	     //같이풀기 3. 닉네임 중복체크하기
 	     String[] nickNames = {"사과", "바나나", "오렌지", "포도", "키위"};
 	     String userNickName = "사과"; //입력받은 닉네임
