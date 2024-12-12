@@ -32,7 +32,7 @@ public class 수업2 {
 
 	public static void main(String[] args) {
 		
-		Person p = new Person(); //Person 클래스 불러오기
+		Person p = new Person("김철수", 20); //Person 클래스 불러오기
 		p.name = "김철수";
 		p.age = 20;
 		System.out.println();
